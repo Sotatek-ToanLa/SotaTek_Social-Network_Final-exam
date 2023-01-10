@@ -1,0 +1,13 @@
+.Login {
+    background-image: url('../Sign_In-Sign_Up.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.form-login {
+    background-color: #FFF;
+    border-radius: 10px;
+}
