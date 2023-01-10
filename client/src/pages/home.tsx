@@ -57,7 +57,24 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-6"></div>
+          <div className="col-6">
+            <div className="row">
+              <div className="col">
+                <input type="text" />
+                <hr />
+                <p>image Video attachment Hashtag</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <p>La Minh Toan</p>
+                <p>2 hour</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                <img src="" alt="" />
+                <p>14 14</p>
+              </div>
+            </div>
+          </div>
           <div className="col-3">
             <div className="row">
               <div className="col">
