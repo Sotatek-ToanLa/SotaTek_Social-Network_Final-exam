@@ -2,12 +2,10 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import Navbar from '../components/Navbar';
-import Profile from '../components/Profile';
-import Post from '../components/Post';
 
 function Home() {
   return (
-    <div className="App bg-light">
+    <div className="App">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -23,14 +21,9 @@ function Home() {
         </a>
       </header> */}
       <Navbar/>
-      <h1>Home</h1>
-
-      <a href="/login">Login</a>
-      <a href="/signup">Signup</a>
-      <a href="/ProfilePage">ProfilePage</a>
       <div className="container">
         <div className="row">
-          {/* <div className="col-3 profile">
+          <div className="col-3 profile">
             <p>La Minh Toan</p>
             <p>Hanoi</p>
             <hr />
@@ -61,50 +54,10 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div> */}
-          <Profile />
-          <Post />
-          {/* <div className="col-6">
-            <div className="row">
-              <div className="col">
-                <input type="text" />
-                <hr />
-                <p>image Video attachment Hashtag</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <p>La Minh Toan</p>
-                <p>2 hour</p>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                <img src="" alt="" />
-                <p>14 14</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <p>La Minh Toan</p>
-                <p>2 hour</p>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                <img src="" alt="" />
-                <p>14 14</p>
-              </div>
-            </div>
-          </div> */}
-          <div className="col-3">
-            <div className="row">
-              <div className="col">
-                <p>Friend request</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <p>Brithday</p>
-              </div>
-            </div>
           </div>
+          
+        </div> 
         </div>
-      </div>
 
     </div>
   );
