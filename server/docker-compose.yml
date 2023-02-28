@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  mysql-db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: Social-Network-Database
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    networks:
+      - backend
+  app:
+    build: .
+    restart: always
+    depends_on:
+      - mysql-db
+    ports:
+      - '3000:3000'
+    networks:
+      - backend
+networks:
+  backend:
+    driver: bridge
